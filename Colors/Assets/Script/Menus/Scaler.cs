@@ -15,7 +15,7 @@ public class Scaler : MonoBehaviour
 
     public RectTransform Leaderboard;
     public Button BackMenu;
-    
+
 
     public GameObject pauseUI;
     public GameObject LeaderUI;

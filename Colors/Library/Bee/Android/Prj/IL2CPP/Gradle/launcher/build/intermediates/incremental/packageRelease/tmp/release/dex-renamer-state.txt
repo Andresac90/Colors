@@ -1,0 +1,4 @@
+#Sat Oct 21 21:10:06 CDT 2023
+base.0=D\:\\Repos\\Colors\\Colors\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

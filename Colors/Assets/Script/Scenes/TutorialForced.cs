@@ -12,7 +12,7 @@ public class TutorialForced : MonoBehaviour
     void Awake()
     {
         Application.targetFrameRate = Screen.currentResolution.refreshRate;
-        Debug.Log(Screen.currentResolution.refreshRate);
+        //Debug.Log(Screen.currentResolution.refreshRate);
         QualitySettings.vSyncCount = 0;
 
         TutorialInt = PlayerPrefs.GetInt(Tutorial);

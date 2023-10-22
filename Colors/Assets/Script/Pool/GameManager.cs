@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public GameObject playertag;
     public AudioSource oofSauce;
 
-    public PlayFabM leaderboard;
+    //public PlayFabM leaderboard;
 
     
     public float score;
@@ -47,17 +47,17 @@ public class GameManager : MonoBehaviour
         score = PlayerPrefs.GetFloat("HighScore");
         scoreint = (int) score;
         oofSauce.Play();
-        if (leaderboard.Internet == true)
-        {
-            SendLeader();
-        }
+        //if (leaderboard.Internet == true)
+        //{
+        //    SendLeader();
+        //}
         
     }
 
-    public void SendLeader()
-    {
-        leaderboard.SendLeaderboard(scoreint);
-    }
+    //public void SendLeader()
+    //{
+    //    leaderboard.SendLeaderboard(scoreint);
+    //}
 
     public void ResumeGame()
     {
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         deathscreen.resumee.gameObject.SetActive(false);
         deathscreen.restart.gameObject.SetActive(false);
         deathscreen.restart2.gameObject.SetActive(true);
-        deathscreen.secondchance.gameObject.SetActive(false);
+        //deathscreen.secondchance.gameObject.SetActive(false);
         thePlayer.speed = thePlayer.speedtracker-(thePlayer.speedtracker*.15f);
         thePlayer.tag = thePlayer.tagger;
         deathscreen.yess = false;
@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
         if (thePlayer.deathonground == true)
         {
             thePlayer.deathonground = false;
-            deathscreen.secondchance.gameObject.SetActive(true);
+            //deathscreen.secondchance.gameObject.SetActive(true);
         }
 
         thePlayer.transform.position = playerStartPoint;
@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
     IEnumerator WaitForIt_Death3()
     {
         yield return new WaitForSeconds(35);
-        deathscreen.secondchance.gameObject.SetActive(true);
+        //deathscreen.secondchance.gameObject.SetActive(true);
         deathscreen.restart.gameObject.SetActive(true);
         //deathscreen.restart2.gameObject.SetActive(false);
     }

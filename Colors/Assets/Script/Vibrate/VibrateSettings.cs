@@ -17,6 +17,6 @@ public class VibrateSettings : MonoBehaviour
     {
         vibrateintt = PlayerPrefs.GetInt(VibrateString);
         vibrateBoolActivate = Convert.ToBoolean(vibrateintt);
-        Debug.Log(PlayerPrefs.GetInt(VibrateString));
+        //Debug.Log(PlayerPrefs.GetInt(VibrateString));
     }
 }

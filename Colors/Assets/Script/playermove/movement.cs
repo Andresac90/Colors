@@ -209,10 +209,10 @@ public class movement : MonoBehaviour
             deathonground = true;
             theGameManager.RestartGame();
 
-            if (deathonground == true)
-            {
-                deathscreen2.secondchance.gameObject.SetActive(false);
-            }
+            //if (deathonground == true)
+            //{
+            //    deathscreen2.secondchance.gameObject.SetActive(false);
+            //}
         }
 
         else if (other.gameObject.tag == "greenkiller" && playertag.gameObject.tag != "green")
